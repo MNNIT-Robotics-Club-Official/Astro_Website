@@ -59,7 +59,7 @@ router.get("/achievement/year", (req, res) => {
   );
 });
 
-// Fetching an achievement with id
+// Fetching an achievement with id using params
 router.get("/achievement/:id", (req, res) => {
   Achievement.findOne({
       _id: req.params.id
